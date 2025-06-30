@@ -1,6 +1,7 @@
 from src import preprocess, heuristic, clustering, hybrid, report
-from src.config import PROCESSED_DATA_PATH, PDF_OUTPUT_PATH
+from src.config import PROCESSED_DATA_PATH, PDF_OUTPUT_PATH, CSV_OUTPUT_PATH
 import pandas as pd
+from datetime import datetime
 from sklearn.preprocessing import StandardScaler
 
 if __name__ == "__main__":
@@ -55,5 +56,8 @@ if __name__ == "__main__":
         feature_cols=feature_cols,
         importances_df=importances_df
     )
+
+    # Save hybrid classification results
+    df_hybrid.to_csv(CSV_OUTPUT_PATH, index=False)
 
     print(f"One-page PDF report saved to: {PDF_OUTPUT_PATH}")
