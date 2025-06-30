@@ -21,14 +21,17 @@ ad_plan_classifier/
 ├── requirements.txt         # Python dependencies
 ├── .gitignore               # Git ignored files
 ├── README.md                # Project documentation
+├
+├── .devcontainer            
+│   └── devcontainer.json    # json file to be able to reopen container easily inside VS
 │
 ├── data/
 │   ├── raw/                 # Input session-level data (CSV)
 │   └── processed/           # Cleaned & transformed data
 │   └── results/             # Final results with the ad-type label for each customer
 │
-├── output/
-│   └── report.pdf           # Final visualization/report
+├── reports/
+│   └── ad-type_plan_analysis_report_YYYY-MM-DD_HH-MM-SS.pdf.pdf           # Final visualization/report
 │
 ├── src/                     # Core source code
 │   ├── __init__.py
@@ -89,7 +92,7 @@ We use `pytest` for unit tests:
 pytest tests/
 ```
 
-## Output
+## Reports
 
 A one-page PDF with:
 - Cluster scatterplots (PCA + t-SNE)
@@ -100,6 +103,12 @@ A one-page PDF with:
 
 Developed as part of the Antenna technical test.
 
-## Contact
+Throughout the project, Gemini and ChatGPT were used to accelerate development by generating modularized Python code, validating project structure, and quickly verifying the correct use of key libraries. These tools supported faster iterations and higher code quality.
 
-For questions or suggestions, feel free to open an issue or contact the author.
+---
+
+## Slide Presentation
+
+For a visual summary of the methodology and results, view the presentation on Google Slides:
+
+[View Slide Deck](https://docs.google.com/presentation/d/e/2PACX-1vRiYCLjmG-9UHunsfyK-Xdr3w_NvWDYGk5IxFYBllk_deQ8-GzasVrNtgQbnPuCF25AixWDkekLQqZZ/pub?start=false&loop=false&delayms=60000)
