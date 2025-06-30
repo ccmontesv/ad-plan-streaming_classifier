@@ -25,6 +25,7 @@ ad_plan_classifier/
 ├── data/
 │   ├── raw/                 # Input session-level data (CSV)
 │   └── processed/           # Cleaned & transformed data
+│   └── results/             # Final results with the ad-type label for each customer
 │
 ├── output/
 │   └── report.pdf           # Final visualization/report

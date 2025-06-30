@@ -18,5 +18,4 @@ env/
 Thumbs.db
 
 #csv files due to size
-data/raw/data.csv
 *.csv
