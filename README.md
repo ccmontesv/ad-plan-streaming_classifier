@@ -79,13 +79,14 @@ python main.py
 Make sure you have Git LFS installed before cloning:
 
 ```bash
-# Install Git LFS (only once per machine)
+# Install Git LFS
 git lfs install
 
 # Then clone the repository
 git clone https://github.com/ccmontesv/ad-plan-classifier_antenna-test.git
 cd your-repo
-
+```
+Unzip the data.csv file inside the data/raw/ folder
 
 ## Testing
 
