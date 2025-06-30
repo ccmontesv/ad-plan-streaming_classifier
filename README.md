@@ -21,6 +21,9 @@ ad_plan_classifier/
 ├── requirements.txt         # Python dependencies
 ├── .gitignore               # Git ignored files
 ├── README.md                # Project documentation
+├── .gitattributes           # Configuration for Git LFS to manage large files
+├── Dockerfile               # Docker image for containerization
+├── .dockerignore            # Specifies files and directories to exclude from Docker builds
 ├
 ├── .devcontainer            
 │   └── devcontainer.json    # json file to be able to reopen container easily inside VS
@@ -71,7 +74,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Cloning the Repository with Git LFS (required because the data.csv file exceeds the 100MB)
+## Cloning the Repository with Git LFS (required because the data.zip file exceeds the 100MB)
 
 Make sure you have Git LFS installed before cloning:
 
@@ -80,7 +83,7 @@ Make sure you have Git LFS installed before cloning:
 git lfs install
 
 # Then clone the repository
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/ccmontesv/ad-plan-classifier_antenna-test.git
 cd your-repo
 
 
