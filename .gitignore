@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+env/
+.antenna/
+
+# OS
+.DS_Store
+Thumbs.db
+
+#csv files due to size
+data/raw/data.csv
+*.csv
